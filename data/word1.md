@@ -1,5 +1,5 @@
-# word
-## dictname
-### dictnamedictnamedictnamedictnamedictname
-## dictname2
-### dictnamedictnamedictnamedictnamedictname
+# WORD
+## DICTNAME
+> DICTNAMEDICTNAMEDICTNAMEDICTNAMEDICTNAME
+## DICTNAME2
+> DICTNAMEDICTNAMEDICTNAMEDICTNAMEDICTNAME

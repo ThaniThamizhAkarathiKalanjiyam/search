@@ -23,7 +23,7 @@ $(document).ready(function(){
                 }
             },
             error: function () {
-                
+                $("#meanings").html("This word is not available at TTAK. Pls add at request page.")
             }
         });
     }
