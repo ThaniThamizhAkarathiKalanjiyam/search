@@ -9,7 +9,9 @@ $(document).ready(function(){
             url: 'https://effervescent-babka-d3abb0.netlify.app/data/'+searctTextVal,
             type: 'GET',
             //dataType: 'json',
-			crossDomain: true,
+			headers: {
+				"Access-Control-Allow-Origin": "*"
+			},
             data: {},
             success: function (ResponseJsonE) {
 				
