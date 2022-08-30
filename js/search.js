@@ -10,7 +10,7 @@ $(document).ready(function(){
             type: 'POST',
             //dataType: 'jsonp',
 			headers: {
-				"Access-Control-Allow-Origin": "*"
+				// "Access-Control-Allow-Origin": "*"
 			},
             data: {},
             success: function (ResponseJsonE) {
