@@ -4,27 +4,11 @@ $(document).ready(function(){
 	 
 		var searctTextVal = $("#txtSearch").val().toLowerCase()
 		
-		$.get('https://effervescent-babka-d3abb0.netlify.app/data/'+searctTextVal, {}, function(ResponseJsonE){
-  var converter = new showdown.Converter(),
-					text      = ResponseJsonE,
-					html      = converter.makeHtml(text);
-
-                if (ResponseJsonE != null) {
-                    $("#meanings").html(html)
-                } else {
-                    
-                }
-}, "html")
-
 		
         $.ajax({
-            url: 'https://effervescent-babka-d3abb0.netlify.app/data/'+searctTextVal,
-            type: 'POST',
-            // dataType: 'jsonp',
-			headers: {
-				"Access-Control-Allow-Origin": "*",
-				"content-type": "text/plain; charset=utf-8"
-			},
+            url: 'data/'+searctTextVal,
+            type: 'GET',
+            //dataType: 'json',
             data: {},
             success: function (ResponseJsonE) {
 				
