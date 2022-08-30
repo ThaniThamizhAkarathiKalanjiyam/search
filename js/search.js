@@ -11,6 +11,7 @@ $(document).ready(function(){
             //dataType: 'jsonp',
 			headers: {
 				// "Access-Control-Allow-Origin": "*"
+				content-type: "text/plain; charset=utf-8"
 			},
             data: {},
             success: function (ResponseJsonE) {
