@@ -6,7 +6,7 @@ $(document).ready(function(){
 		
 		
         $.ajax({
-            url: 'data/'+searctTextVal,
+            url: 'data/'+searctTextVal+".md",
             type: 'GET',
             //dataType: 'json',
             data: {},
