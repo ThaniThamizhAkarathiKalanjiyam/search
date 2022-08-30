@@ -8,7 +8,7 @@ $(document).ready(function(){
         $.ajax({
             url: 'https://effervescent-babka-d3abb0.netlify.app/data/'+searctTextVal,
             type: 'POST',
-            dataType: 'jsonp',
+            // dataType: 'jsonp',
 			headers: {
 				// "Access-Control-Allow-Origin": "*"
 				"content-type": "text/plain; charset=utf-8"
