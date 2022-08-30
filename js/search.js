@@ -4,6 +4,18 @@ $(document).ready(function(){
 	 
 		var searctTextVal = $("#txtSearch").val().toLowerCase()
 		
+		$.get('https://effervescent-babka-d3abb0.netlify.app/data/'+searctTextVal, {}, function(ResponseJsonE){
+  var converter = new showdown.Converter(),
+					text      = ResponseJsonE,
+					html      = converter.makeHtml(text);
+
+                if (ResponseJsonE != null) {
+                    $("#meanings").html(html)
+                } else {
+                    
+                }
+}, "html")
+
 		
         $.ajax({
             url: 'https://effervescent-babka-d3abb0.netlify.app/data/'+searctTextVal,
