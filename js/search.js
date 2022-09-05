@@ -2,11 +2,11 @@ $(document).ready(function(){
 
  wordsearch = function (funcData) {
 	 
-		var searctTextVal = $("#txtSearch").val().toLowerCase()
+		var searctTextVal = $.trim($("#txtSearch").val().toLowerCase())
 		
 		
         $.ajax({
-            url: 'data/'+searctTextVal+".md",
+            url: 'data/'+searctTextVal,//+".md",
             type: 'GET',
             //dataType: 'json',
             data: {},
